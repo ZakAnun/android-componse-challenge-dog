@@ -69,4 +69,5 @@ class MainViewModel : ViewModel() {
     fun closeDog() {
         currentDog = null
     }
+
 }

@@ -25,4 +25,5 @@ class Dog(
     val gender: String,
     val size: String,
     @DrawableRes val picture: Int
+
 )
