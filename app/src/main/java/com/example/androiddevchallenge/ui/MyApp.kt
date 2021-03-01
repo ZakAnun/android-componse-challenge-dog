@@ -56,9 +56,11 @@ fun MyApp() {
                 viewModel.showDog(dog)
             }
         }
-        AnimatedVisibility(visible = currentDog != null,
+        AnimatedVisibility(
+            visible = currentDog != null,
             enter = slideInVertically() + fadeIn(),
-            exit = slideOutVertically() + fadeOut()) {
+            exit = slideOutVertically() + fadeOut()
+        ) {
             if (currentDog != null) {
                 DogDetails(currentDog) {
                     coroutineScope.launch {

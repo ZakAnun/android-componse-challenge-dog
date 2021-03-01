@@ -55,7 +55,9 @@ fun DogDetails(dog: Dog, onAdopt: (Dog) -> Unit = {}) {
             Image(
                 painter = painterResource(id = dog.picture),
                 contentDescription = "Dog main picture: ${dog.name}",
-                modifier = Modifier.padding(60.dp).aspectRatio(1f),
+                modifier = Modifier
+                    .padding(60.dp)
+                    .aspectRatio(1f),
                 contentScale = ContentScale.Crop,
                 alpha = 1.0f
             )
@@ -87,6 +89,7 @@ fun DogDetailsPreview() {
     DogDetails(
         Dog(
             "Apple", "German Shepherd", "Apple is a lovely dog~",
-            "Adult", "Male", "Large", R.drawable.dog_myq)
+            "Adult", "Male", "Large", R.drawable.dog_myq
+        )
     )
 }

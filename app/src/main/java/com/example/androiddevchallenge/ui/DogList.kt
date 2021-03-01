@@ -49,15 +49,20 @@ fun DogItem(dog: Dog, modifier: Modifier = Modifier) {
         Image(
             painter = painterResource(id = dog.picture),
             contentDescription = "dog background",
-            modifier = Modifier.fillMaxSize(1f)
-                .padding(start = 0.dp, top = 2.dp,
-                    end = 0.dp, bottom = 2.dp),
+            modifier = Modifier
+                .fillMaxSize(1f)
+                .padding(
+                    start = 0.dp, top = 2.dp,
+                    end = 0.dp, bottom = 2.dp
+                ),
             alpha = 0.3f,
             contentScale = ContentScale.Crop
         )
-        Row(modifier = Modifier
+        Row(
+            modifier = Modifier
                 .padding(20.dp)
-                .fillMaxWidth(1f)) {
+                .fillMaxWidth(1f)
+        ) {
             Image(
                 painterResource(dog.picture),
                 "Picture of dog: ${dog.name}",
@@ -79,10 +84,12 @@ fun DogListPreview() {
     val dogs = listOf(
         Dog(
             "Apple", "German Shepherd", "Apple is a lovely dog~",
-            "Adult", "Male", "Large", com.example.androiddevchallenge.R.drawable.dog_myq),
+            "Adult", "Male", "Large", com.example.androiddevchallenge.R.drawable.dog_myq
+        ),
         Dog(
             "Banner", "Bulldog", "Banner very nice and wish a new family~",
-            "Puppy", "Female", "Small", com.example.androiddevchallenge.R.drawable.dog_dn)
+            "Puppy", "Female", "Small", com.example.androiddevchallenge.R.drawable.dog_dn
+        )
     )
     MyTheme {
         DogList(dogs)
@@ -95,10 +102,12 @@ fun DogListPreviewDark() {
     val dogs = listOf(
         Dog(
             "Apple", "German Shepherd", "Apple is a lovely dog~",
-            "Adult", "Male", "Large", R.drawable.dog_myq),
+            "Adult", "Male", "Large", R.drawable.dog_myq
+        ),
         Dog(
             "Banner", "Bulldog", "Banner very nice and wish a new family~",
-            "Puppy", "Female", "Small", R.drawable.dog_dn)
+            "Puppy", "Female", "Small", R.drawable.dog_dn
+        )
     )
     MyTheme(darkTheme = true) {
         DogList(dogs)
@@ -112,7 +121,8 @@ fun DogItemPreview() {
         DogItem(
             Dog(
                 "Apple", "German Shepherd", "Apple is a lovely dog~",
-                "Adult", "Male", "Large", R.drawable.dog_myq)
+                "Adult", "Male", "Large", R.drawable.dog_myq
+            )
         )
     }
 }
@@ -124,7 +134,8 @@ fun DogItemPreviewDark() {
         DogItem(
             Dog(
                 "Apple", "German Shepherd", "Apple is a lovely dog~",
-                "Adult", "Male", "Large", R.drawable.dog_myq)
+                "Adult", "Male", "Large", R.drawable.dog_myq
+            )
         )
     }
 }
