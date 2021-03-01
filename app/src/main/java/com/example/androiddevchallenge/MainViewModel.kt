@@ -56,7 +56,7 @@ class MainViewModel : ViewModel() {
             Dog(
                 "Lemon", "Labrador Retriever", "Live together~",
                 "Young", "Female", "Medium | Large", R.drawable.dog_lbld
-            )
+            ),
         )
     )
 
@@ -69,5 +69,4 @@ class MainViewModel : ViewModel() {
     fun closeDog() {
         currentDog = null
     }
-
 }

@@ -92,5 +92,4 @@ fun DogDetailsPreview() {
             "Adult", "Male", "Large", R.drawable.dog_myq
         )
     )
-
 }
