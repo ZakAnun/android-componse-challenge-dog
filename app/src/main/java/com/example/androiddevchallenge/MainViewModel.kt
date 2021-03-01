@@ -22,7 +22,6 @@ import androidx.lifecycle.ViewModel
 import com.example.androiddevchallenge.data.Dog
 
 class MainViewModel : ViewModel() {
-
     val dogs by mutableStateOf(
         listOf(
             Dog(
