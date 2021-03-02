@@ -5,7 +5,7 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-Lasted version contains a list about information for dogs, and their detail message. complete wiht Jetpack Compose.
+Lasted version contains a list about information for dogs, and their detail message. complete with Jetpack Compose.
 - click list item can enter detail page
 - press back return to list page
 - make you decision with adopt button
@@ -16,7 +16,7 @@ Lasted version contains a list about information for dogs, and their detail mess
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="https://i.loli.net/2021/03/02/dNA62a7L1UPfJCp.png" width="260">&emsp;&emsp;<img src="https://i.loli.net/2021/03/02/5YwLo3EMXgyCiNe.png" width="260">
+<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
 
 
 ## License
